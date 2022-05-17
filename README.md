@@ -8,7 +8,7 @@
 
 ## Use
 
-将项目下载到本地后,将需要导入的 `*.sql` 放入到 `init` 目录下.然后回到 `docker-compose.yml` 所在目录下执行一下命令即可:
+将项目下载到本地后,将需要导入的 `*.sql` 放入到 `mysql/init` 目录下.然后回到 `docker-compose.yml` 所在目录下执行一下命令即可:
 
 ```
 docker-compose up -d
@@ -22,4 +22,4 @@ docker-compose up -d
 
 启动后 `Mysql` 的初始密码为 `root123`.如需更改, 请修改 `Dockerfile` 中的 `root123` 为您想要的值.
 
-`init/init.sh` 的执行逻辑为: 允许数据库远程访问.如您不需要此选项可以将此文件删除.
+`mysql/init/init.sh` 的执行逻辑为: 允许数据库远程访问.如您不需要此选项可以将此文件删除.
